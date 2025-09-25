@@ -1,0 +1,12 @@
+ohio_pantries = {"Akron-Canton Regional Foodbank" : "350 Opportunity Parkway Akron, OH 44307",
+ "Freestore Foodbank" : "3401 Rosenthal Way Cincinnati, OH 45204",
+  "Greater Cleveland Food Bank" : "13815 Coit Rd Cleveland, OH 44110",
+   "Mid-Ohio Food Collective" : "3960 Brookham Drive Grove City, OH 43123",
+    "Second Harvest Food Bank of Clark, Champaign, and Logan" : "20 N Murray Street Springfield, OH 45503",
+     "Second Harvest Food Bank of North Central Ohio" : "5510 Baumhart Road Lorain, OH 44053",
+      "Second Harvest Food Bank of the Mahoning Valley" : "2805 Salt Springs Road Youngstown, OH 44509",
+       "Shared Harvest Foodbank" : "5901 Dixie Highway Fairfield, OH 45014",
+        "Southeast Ohio Foodbank & Kitchen (a division of Hocking Athens Perry Community Action)" : "1005 CIC Drive Logan, OH 43138",
+         "The Foodbank, Inc." : "56 Armor Place Dayton, OH 45417",
+          "Toledo Northwestern Ohio Food Bank" : "24 East Woodruff Avenue Toledo, OH 43604"
+}
