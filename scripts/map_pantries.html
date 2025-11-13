@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a8ede196a0bed796724eb4cd565bf764 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a8ede196a0bed796724eb4cd565bf764" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a8ede196a0bed796724eb4cd565bf764 = L.map(
+                "map_a8ede196a0bed796724eb4cd565bf764",
+                {
+                    center: [39.1031, -84.512],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d24793011d96ebb7d4688703d4278209 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d24793011d96ebb7d4688703d4278209.addTo(map_a8ede196a0bed796724eb4cd565bf764);
+        
+    
+            var marker_cluster_0713b8836b3cc0b3ae3c436f7d668167 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_29881e73c7f60bc1e0f5518019db2521 = L.marker(
+                [1.0725, 81.5361],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_96f0cdafd0c37ec4c729aad6f6fac6a8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_39eb3ea38b9048831f91ed5b27c562ec = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_703ce09e5ac635b29d865d3250b3991a = $(`<div id="html_703ce09e5ac635b29d865d3250b3991a" style="width: 100.0%; height: 100.0%;"><b>Akron-Canton Regional Foodbank</b><br>350 Opportunity Parkway Akron OH 44307</div>`)[0];
+                popup_39eb3ea38b9048831f91ed5b27c562ec.setContent(html_703ce09e5ac635b29d865d3250b3991a);
+            
+        
+
+        marker_29881e73c7f60bc1e0f5518019db2521.bindPopup(popup_39eb3ea38b9048831f91ed5b27c562ec)
+        ;
+
+        
+    
+    
+            marker_29881e73c7f60bc1e0f5518019db2521.bindTooltip(
+                `<div>
+                     Akron-Canton Regional Foodbank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_29881e73c7f60bc1e0f5518019db2521.setIcon(icon_96f0cdafd0c37ec4c729aad6f6fac6a8);
+            
+    
+            var marker_7ebcdb3b7ac34a27d7c21817dc9e4f81 = L.marker(
+                [39.08, -84.58],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_47fe18d3a3aa6f01006bc45be4c2aef6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54021bf523d7dcfda6a44254edcf70d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_de5b0515adf4f11c3106a45750b6d2b9 = $(`<div id="html_de5b0515adf4f11c3106a45750b6d2b9" style="width: 100.0%; height: 100.0%;"><b>Freestore Foodbank</b><br>3401 Rosenthal Way Cincinnati OH 45204</div>`)[0];
+                popup_54021bf523d7dcfda6a44254edcf70d1.setContent(html_de5b0515adf4f11c3106a45750b6d2b9);
+            
+        
+
+        marker_7ebcdb3b7ac34a27d7c21817dc9e4f81.bindPopup(popup_54021bf523d7dcfda6a44254edcf70d1)
+        ;
+
+        
+    
+    
+            marker_7ebcdb3b7ac34a27d7c21817dc9e4f81.bindTooltip(
+                `<div>
+                     Freestore Foodbank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ebcdb3b7ac34a27d7c21817dc9e4f81.setIcon(icon_47fe18d3a3aa6f01006bc45be4c2aef6);
+            
+    
+            var marker_45a30d1ca2664dcb093bf616eefb590d = L.marker(
+                [41.55, -81.59],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_9672cddb5d05e42080224e8d4abd2406 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f851fee2aa54bc7bc599341dc22c9ddd = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c00895f4766d5d437da665327138c7dc = $(`<div id="html_c00895f4766d5d437da665327138c7dc" style="width: 100.0%; height: 100.0%;"><b>Greater Cleveland Food Bank</b><br>13815 Coit Rd Cleveland OH 44110</div>`)[0];
+                popup_f851fee2aa54bc7bc599341dc22c9ddd.setContent(html_c00895f4766d5d437da665327138c7dc);
+            
+        
+
+        marker_45a30d1ca2664dcb093bf616eefb590d.bindPopup(popup_f851fee2aa54bc7bc599341dc22c9ddd)
+        ;
+
+        
+    
+    
+            marker_45a30d1ca2664dcb093bf616eefb590d.bindTooltip(
+                `<div>
+                     Greater Cleveland Food Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45a30d1ca2664dcb093bf616eefb590d.setIcon(icon_9672cddb5d05e42080224e8d4abd2406);
+            
+    
+            var marker_bf4fe6b7f13557b6562f1da459c13966 = L.marker(
+                [39.88, -83.05],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_65a11d56635ae0bd54a33c90ff12dddf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0e99421f7a484792ee894bc6530ac7d6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1272128ae3ec7af321d79fa45d764b52 = $(`<div id="html_1272128ae3ec7af321d79fa45d764b52" style="width: 100.0%; height: 100.0%;"><b>Mid-Ohio Food Collective</b><br>3960 Brookham Drive Grove City OH 43123</div>`)[0];
+                popup_0e99421f7a484792ee894bc6530ac7d6.setContent(html_1272128ae3ec7af321d79fa45d764b52);
+            
+        
+
+        marker_bf4fe6b7f13557b6562f1da459c13966.bindPopup(popup_0e99421f7a484792ee894bc6530ac7d6)
+        ;
+
+        
+    
+    
+            marker_bf4fe6b7f13557b6562f1da459c13966.bindTooltip(
+                `<div>
+                     Mid-Ohio Food Collective
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bf4fe6b7f13557b6562f1da459c13966.setIcon(icon_65a11d56635ae0bd54a33c90ff12dddf);
+            
+    
+            var marker_70a95a963a768931f4229edf7709506d = L.marker(
+                [39.979, 83.842],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_0e80006ce8e8677cae7a496f0821f18e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_010a75ea24ccf4fd674a658d3f880520 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_588a36974166a17911117c0c434ca248 = $(`<div id="html_588a36974166a17911117c0c434ca248" style="width: 100.0%; height: 100.0%;"><b>Second Harvest Food Bank of Clark Champaign and Logan</b><br>20 N Murray Street Springfield OH 45503</div>`)[0];
+                popup_010a75ea24ccf4fd674a658d3f880520.setContent(html_588a36974166a17911117c0c434ca248);
+            
+        
+
+        marker_70a95a963a768931f4229edf7709506d.bindPopup(popup_010a75ea24ccf4fd674a658d3f880520)
+        ;
+
+        
+    
+    
+            marker_70a95a963a768931f4229edf7709506d.bindTooltip(
+                `<div>
+                     Second Harvest Food Bank of Clark Champaign and Logan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70a95a963a768931f4229edf7709506d.setIcon(icon_0e80006ce8e8677cae7a496f0821f18e);
+            
+    
+            var marker_571f44f59e1737951c1da0fdf47f1a6d = L.marker(
+                [41.42, -82.28],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_5dc93b0e304f040914762b1d02224ed0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_576557c3fa424400a21183163e3110a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0e2c701b8179c139e224e5ae63ad4a1 = $(`<div id="html_c0e2c701b8179c139e224e5ae63ad4a1" style="width: 100.0%; height: 100.0%;"><b>Second Harvest Food Bank of North Central Ohio</b><br>5510 Baumhart Road Lorain OH 44053</div>`)[0];
+                popup_576557c3fa424400a21183163e3110a2.setContent(html_c0e2c701b8179c139e224e5ae63ad4a1);
+            
+        
+
+        marker_571f44f59e1737951c1da0fdf47f1a6d.bindPopup(popup_576557c3fa424400a21183163e3110a2)
+        ;
+
+        
+    
+    
+            marker_571f44f59e1737951c1da0fdf47f1a6d.bindTooltip(
+                `<div>
+                     Second Harvest Food Bank of North Central Ohio
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_571f44f59e1737951c1da0fdf47f1a6d.setIcon(icon_5dc93b0e304f040914762b1d02224ed0);
+            
+    
+            var marker_3b79a2496d62019cf6a238d2f9a7fc2a = L.marker(
+                [41.13, -80.71],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_4eecb1b7d699835e9d2fc0aa7c21b31b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bbd9f0e558d1eb11c856b3368530f240 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_35e21920f0fb80abae197bcadc94649b = $(`<div id="html_35e21920f0fb80abae197bcadc94649b" style="width: 100.0%; height: 100.0%;"><b>Second Harvest Food Bank of the Mahoning Valley</b><br>2805 Salt Springs Road Youngstown OH 44509</div>`)[0];
+                popup_bbd9f0e558d1eb11c856b3368530f240.setContent(html_35e21920f0fb80abae197bcadc94649b);
+            
+        
+
+        marker_3b79a2496d62019cf6a238d2f9a7fc2a.bindPopup(popup_bbd9f0e558d1eb11c856b3368530f240)
+        ;
+
+        
+    
+    
+            marker_3b79a2496d62019cf6a238d2f9a7fc2a.bindTooltip(
+                `<div>
+                     Second Harvest Food Bank of the Mahoning Valley
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b79a2496d62019cf6a238d2f9a7fc2a.setIcon(icon_4eecb1b7d699835e9d2fc0aa7c21b31b);
+            
+    
+            var marker_164c140c24d9b39318beec0559baffd4 = L.marker(
+                [39.33, -84.52],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_f8f0ce0971c73bca7c2c5f612fdb0c83 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb9ddfdf8fa537d36835411cc1554b90 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_abed9dc01e2feb6d2fcfca079413a01a = $(`<div id="html_abed9dc01e2feb6d2fcfca079413a01a" style="width: 100.0%; height: 100.0%;"><b>Shared Harvest Foodbank</b><br>5901 Dixie Highway Fairfield OH 45014</div>`)[0];
+                popup_bb9ddfdf8fa537d36835411cc1554b90.setContent(html_abed9dc01e2feb6d2fcfca079413a01a);
+            
+        
+
+        marker_164c140c24d9b39318beec0559baffd4.bindPopup(popup_bb9ddfdf8fa537d36835411cc1554b90)
+        ;
+
+        
+    
+    
+            marker_164c140c24d9b39318beec0559baffd4.bindTooltip(
+                `<div>
+                     Shared Harvest Foodbank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_164c140c24d9b39318beec0559baffd4.setIcon(icon_f8f0ce0971c73bca7c2c5f612fdb0c83);
+            
+    
+            var marker_bc3a1953e56f26eedf6b9ecc6995e1d3 = L.marker(
+                [39.5447, 82.4285],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_dee7bdd090e357ca387dd69b67643917 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53ca1c0fdb3e33f6018246f320283cb4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f3e580d85b55d76fbefb7074c48a52be = $(`<div id="html_f3e580d85b55d76fbefb7074c48a52be" style="width: 100.0%; height: 100.0%;"><b>Southeast Ohio Foodbank & Kitchen</b><br>1005 CIC Drive Logan OH 43138</div>`)[0];
+                popup_53ca1c0fdb3e33f6018246f320283cb4.setContent(html_f3e580d85b55d76fbefb7074c48a52be);
+            
+        
+
+        marker_bc3a1953e56f26eedf6b9ecc6995e1d3.bindPopup(popup_53ca1c0fdb3e33f6018246f320283cb4)
+        ;
+
+        
+    
+    
+            marker_bc3a1953e56f26eedf6b9ecc6995e1d3.bindTooltip(
+                `<div>
+                     Southeast Ohio Foodbank & Kitchen
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc3a1953e56f26eedf6b9ecc6995e1d3.setIcon(icon_dee7bdd090e357ca387dd69b67643917);
+            
+    
+            var marker_6e605675223207292da254821f0f50e6 = L.marker(
+                [39.7483, 84.21],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_d17027baeddf8b22d4fcccd553d7ef46 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b711c8b1433a6d1997aefc125ee5f493 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_4e94481f1d35f8ca1db4f44264345913 = $(`<div id="html_4e94481f1d35f8ca1db4f44264345913" style="width: 100.0%; height: 100.0%;"><b>The Foodbank Inc.</b><br>56 Armor Place Dayton OH 45417</div>`)[0];
+                popup_b711c8b1433a6d1997aefc125ee5f493.setContent(html_4e94481f1d35f8ca1db4f44264345913);
+            
+        
+
+        marker_6e605675223207292da254821f0f50e6.bindPopup(popup_b711c8b1433a6d1997aefc125ee5f493)
+        ;
+
+        
+    
+    
+            marker_6e605675223207292da254821f0f50e6.bindTooltip(
+                `<div>
+                     The Foodbank Inc.
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_6e605675223207292da254821f0f50e6.setIcon(icon_d17027baeddf8b22d4fcccd553d7ef46);
+            
+    
+            var marker_97fa872efd4629035f549bc4f138d32c = L.marker(
+                [41.6599, 83.5445],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_0e93e05223f8542b0636d95ad255d6d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7edd18fccf767addbcdbd8a564b5254d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_45efd62ac5c11c9adf6c73d570dfff26 = $(`<div id="html_45efd62ac5c11c9adf6c73d570dfff26" style="width: 100.0%; height: 100.0%;"><b>Toledo Northwestern Ohio Food Bank</b><br>24 East Woodruff Avenue Toledo OH 43604</div>`)[0];
+                popup_7edd18fccf767addbcdbd8a564b5254d.setContent(html_45efd62ac5c11c9adf6c73d570dfff26);
+            
+        
+
+        marker_97fa872efd4629035f549bc4f138d32c.bindPopup(popup_7edd18fccf767addbcdbd8a564b5254d)
+        ;
+
+        
+    
+    
+            marker_97fa872efd4629035f549bc4f138d32c.bindTooltip(
+                `<div>
+                     Toledo Northwestern Ohio Food Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_97fa872efd4629035f549bc4f138d32c.setIcon(icon_0e93e05223f8542b0636d95ad255d6d6);
+            
+    
+            var marker_89b8a82582ec9da96adb15f091ba7ac5 = L.marker(
+                [40.73, -84.08],
+                {
+}
+            ).addTo(marker_cluster_0713b8836b3cc0b3ae3c436f7d668167);
+        
+    
+            var icon_2e413c5b94f406268f9e1d76f7169459 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_310a46b592fdc36b87e30f3ff0d4631b = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_ffee08b53b63bff228d3dfbe8e868645 = $(`<div id="html_ffee08b53b63bff228d3dfbe8e868645" style="width: 100.0%; height: 100.0%;"><b>West Ohio Food Bank</b><br>1380 East Kibby Street Lima OH 45804</div>`)[0];
+                popup_310a46b592fdc36b87e30f3ff0d4631b.setContent(html_ffee08b53b63bff228d3dfbe8e868645);
+            
+        
+
+        marker_89b8a82582ec9da96adb15f091ba7ac5.bindPopup(popup_310a46b592fdc36b87e30f3ff0d4631b)
+        ;
+
+        
+    
+    
+            marker_89b8a82582ec9da96adb15f091ba7ac5.bindTooltip(
+                `<div>
+                     West Ohio Food Bank
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89b8a82582ec9da96adb15f091ba7ac5.setIcon(icon_2e413c5b94f406268f9e1d76f7169459);
+            
+    
+            marker_cluster_0713b8836b3cc0b3ae3c436f7d668167.addTo(map_a8ede196a0bed796724eb4cd565bf764);
+        
+    
+            var circle_95a76c76c5b02a8564345984fff12d8a = L.circle(
+                [39.1031, -84.512],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_a8ede196a0bed796724eb4cd565bf764);
+        
+</script>
+</html>
